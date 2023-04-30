@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script>
+     document.addEventListener("DOMContentLoaded", function() {
+     const dropdown = document.getElementById("dropdown");
+     const options = document.getElementById("options");
+     const showValue = document.getElementById("show-value");
+     const selectedValue = document.getElementById("selected-value");
+
+     dropdown.addEventListener("click", function() {
+       const value = options.value;
+       selectedValue.innerText = "Seçili değer: " + value;
+     });
+
+     showValue.addEventListener("click", function() {
+       const value = options.value;
+       selectedValue.innerText = "Seçili değer: " + value;
+     });
+    });
+
+    </script>
+  </head>
+
+  <body>
+    <button id="dropdown">Seçenekler</button>
+    <select id="options">
+      <option value="1">Seçenek 1</option>
+      <option value="2">Seçenek 2</option>
+      <option value="3">Seçenek 3</option>
+    </select>
+    
+    <button id="show-value">Seçili Değeri Göster</button>
+    <h1 id="selected-value"></h1>    
+  </body>
+</html>

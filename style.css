@@ -1,0 +1,299 @@
+/* BÜTÜN SAYFALARDA GEÇERLİ BG FOTOĞRAFI İÇİN */
+
+body {
+    margin : 0;
+    padding : 0;
+    background: url(arkaplan.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* SPECİAL DESİGN İÇİN CSS KODLARI */
+
+#specialdesign{
+  font-size: 45;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #3498db;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+
+/* İNDEX (ANASAYFA) İÇİN CSS KODLARI */
+
+.yazilar_index{
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+  height: 10vh;
+  width: 100%;
+  background-color: #2e2d2d;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.urunler_navbar{
+  color: whitesmoke;
+  font-size: 20;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.8s;
+  text-decoration: none;
+}
+
+.navbar_elemanları:hover{
+  color: red;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  transition: 0.8s;
+}
+
+.dropdown a:hover{
+  color: red;
+}
+
+.dropdown_child{
+  background-color: #2e2d2d;
+  position: fixed;
+  display: none;
+}
+
+.dropdown_child a{
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown_child{
+  display: block;
+}
+
+.navbar_elemanları{
+  font-size: 20;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.8s;
+}
+.kutular_ana{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto; 
+  justify-content: center;
+}
+
+.kutular{
+  background: #dae9f37e;
+  border-radius: 20px;
+  padding: 0px;
+  margin: 100px 50px 100px 100px;
+  width: 210px;
+  height: 210px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black
+}
+
+.kutu_ici_baslik{
+  color: rgb(255, 0, 0);
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 17;}
+
+#uretim_tesisi_png{
+  display: block;
+  margin: 0 auto;
+  height: 480;
+  width: 800;
+}
+  
+
+/* ÜRÜN SAYFALARI İÇİN CSS KODLARI */
+
+.urun_resimleri{
+  width: 200px;
+  height: 200px;
+  /* margin-left: 50px; */
+}
+
+figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+figcaption{
+  text-align: center;
+  /* margin-left: 50px; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    font-size: 20px;
+    padding: 10 20;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* İLETİŞİM SAYFASI İÇİN CSS KODLARI */
+
+.hr-custom {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 30px;
+}
+
+.hr-custom::before,
+.hr-custom::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid black;
+}
+
+.hr-custom span {
+  padding: 0 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 25;
+}
+
+form {
+	width: 50%;
+	margin: auto;
+	padding: 20px;
+	border-radius: 5px;
+}
+input[type=text], input[type=email], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+label {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.konum_bilgisi{
+  display: block;
+  margin: 0 auto;
+}
+
+.adres_bilgisi{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* HAKKINDA SAYFASI İÇİN CSS KODU */
+
+.hakkinda_yazisi{
+  font-size: 20;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sosyal_medya{
+  display: flex;
+  justify-content: center;
+}
+
+.sosyal_medya img{
+  margin: 0 10px;
+  height: 50;
+  width: 50;
+}
+  
+/* SİPARİŞ SAYFASI */
+/* margin-left: 50px; */
+
+.cm {
+  /* margin-left: 50px; */
+  font-size: 13px;
+  height: 40px;
+  width: 100px;
+}
+
+.btn {
+  /* margin-left: 50px; */
+  border: 2px solid black;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  background: #2e2d2d;
+  padding: 10px 17px 10px 17px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/* SEPET SAYFASI İÇİN CSS KODLARI */
+
+.radio_butonlar{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18;
+}
+
+#tablo_basligi{
+  font-weight: bold;
+  font-size: 30;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+  font-size: 25;
+  font-family: Arial, Helvetica, sans-serif;
+}
